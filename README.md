@@ -1,84 +1,48 @@
-# [Start Bootstrap - Creative](https://startbootstrap.com/theme/creative/)
+# Frogger
+A retro grid-based game in vanilla JavaScript, HTML and CSS
 
-[Creative](https://startbootstrap.com/theme/creative/) is a one page, creative website theme built with [Bootstrap](https://getbootstrap.com/) created by [Start Bootstrap](https://startbootstrap.com/).
+For the full walkthrough to coding the game, please visit [here](https://www.youtube.com/channel/UC5DNytAJ6_FISueUfzZCVsw)
 
-## Preview
+I have kept the styling at a bare miniumum for you to go wild and make it your own. Please tag me as I would LOVE to see your game!!!
 
-[![Creative Preview](https://assets.startbootstrap.com/img/screenshots/themes/creative.png)](https://startbootstrap.github.io/startbootstrap-creative/)
+Frogger is a 1981 arcade game developed by Konami and originally published by Sega. The game was originally going to be titled "Highway Crossing Frog," but the executives at Sega felt it did not capture the true nature of the game and was changed simply to "Frogger". The object of the game is to direct a frog to its home by crossing a busy road and navigating a river by jumping on logs. By 2005, Frogger in its various home video game incarnations had sold 20 million copies worldwide, including 5 million in the United States. The game found its way into popular culture, including television and music.
 
-**[View Live Preview](https://startbootstrap.github.io/startbootstrap-creative/)**
+It is a timed grid-based game. In this repo, I will be putting extra focus on the 'switch' use case. If you want to learn how to use switches effectively, please have a look at my code.
 
-## Status
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/StartBootstrap/startbootstrap-creative/master/LICENSE)
-[![npm version](https://img.shields.io/npm/v/startbootstrap-creative.svg)](https://www.npmjs.com/package/startbootstrap-creative)
-[![dependencies Status](https://david-dm.org/StartBootstrap/startbootstrap-creative/status.svg)](https://david-dm.org/StartBootstrap/startbootstrap-creative)
-[![devDependencies Status](https://david-dm.org/StartBootstrap/startbootstrap-creative/dev-status.svg)](https://david-dm.org/StartBootstrap/startbootstrap-creative?type=dev)
+### What inbuilt functions are we going to focus on?
+* switch
+* cases
+* addEventListener
+* removeEventListener
+* setInterval
+* clearInterval
+* document.querySelector
+* arrow functions
 
-## Download and Installation
+### Rules of Frogger
+* You will start on your blue starting block, or 'starting-block'
+* You have 20 seconds from pressing the start button to get to your red block or 'ending-block' to win the game
+* You will lose if the time runs out
+* You will lose if you get hit by a car, or 'c1'
+* You will lose if you fall into the river, or '.l4, .l5, .lf2, .lf3'
+* You will be safe on the road, or '.c2, .c3'
+* You will be safe on the logs, or '.l1, .l2, .l3'
+* You will move with the logs when on them
+* You can pause the game by pressing the same button as you did to start the game
 
-To begin using this template, choose one of the following options to get started:
+Happy d~frogging! (lol)
 
-- [Download the latest release on Start Bootstrap](https://startbootstrap.com/theme/creative/)
-- Install using npm: `npm i startbootstrap-creative`
-- Clone the repo: `git clone https://github.com/StartBootstrap/startbootstrap-creative.git`
-- [Fork, Clone, or Download on GitHub](https://github.com/StartBootstrap/startbootstrap-creative)
 
-## Usage
+### MIT Licence
 
-### Basic Usage
+Copyright (c) 2020 Ania Kubow
 
-After downloading, simply edit the HTML and CSS files included with `dist` directory. These are the only files you need to worry about, you can ignore everything else! To preview the changes you make to the code, you can open the `index.html` file in your web browser.
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-### Advanced Usage
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-Clone the source files of the theme and navigate into the theme's root directory. Run `npm install` and then run `npm start` which will open up a preview of the template in your default browser, watch for changes to core template files, and live reload the browser when changes are saved. You can view the `package.json` file to see which scripts are included.
+*Translation: Ofcourse you can use this for you project! Just make sure to say where you got this from :)
 
-#### npm Scripts
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-- `npm run build` builds the project - this builds assets, HTML, JS, and CSS into `dist`
-- `npm run build:assets` copies the files in the `src/assets/` directory into `dist`
-- `npm run build:pug` compiles the Pug located in the `src/pug/` directory into `dist`
-- `npm run build:scripts` brings the `src/js/scripts.js` file into `dist`
-- `npm run build:scss` compiles the SCSS files located in the `src/scss/` directory into `dist`
-- `npm run clean` deletes the `dist` directory to prepare for rebuilding the project
-- `npm run start:debug` runs the project in debug mode
-- `npm start` or `npm run start` runs the project, launches a live preview in your default browser, and watches for changes made to files in `src`
-
-You must have npm installed in order to use this build environment.
-
-### Contact Form
-
-The contact form available with this theme is prebuilt to use [SB Forms](https://startbootstrap.com/solution/contact-forms).
-SB Forms is a simple form solution for adding functional forms to your theme. Since this theme is prebuilt using our
-SB Forms markup, all you need to do is sign up for [SB Forms on Start Bootstrap](https://startbootstrap.com/solution/contact-forms).
-
-After signing up you will need to set the domain name your form will be used on, and you will then see your
-access key. Copy this and paste it into the `data-sb-form-api-token='API_TOKEN'` data attribute in place of
-`API_TOKEN`. That's it! Your forms will be up and running!
-
-If you aren't using SB Forms, simply delete the custom data attributes from the form, and remove the link above the
-closing `</body>` tag to SB Forms.
-
-## Bugs and Issues
-
-Have a bug or an issue with this template? [Open a new issue](https://github.com/StartBootstrap/startbootstrap-creative/issues) here on GitHub or leave a comment on the [theme overview page at Start Bootstrap](https://startbootstrap.com/theme/creative/).
-
-## About
-
-Start Bootstrap is an open source library of free Bootstrap themes and templates. All of the free themes and templates on Start Bootstrap are released under the MIT license, which means you can use them for any purpose, even for commercial projects.
-
-- <https://startbootstrap.com>
-- <https://twitter.com/SBootstrap>
-
-Start Bootstrap was created by and is maintained by **[David Miller](https://davidmiller.io/)**.
-
-- <https://davidmiller.io>
-- <https://twitter.com/davidmillerhere>
-- <https://github.com/davidtmiller>
-
-Start Bootstrap is based on the [Bootstrap](https://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
-
-## Copyright and License
-
-Copyright 2013-2022 Start Bootstrap LLC. Code released under the [MIT](https://github.com/StartBootstrap/startbootstrap-creative/blob/master/LICENSE) license.
